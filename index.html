@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astraphelos Managed IT Solutions</title>
+  <style>
+    /* Reset & Base */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f7f9fc;
+      color: #333;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Variables */
+    :root { --primary: #2ecc40; }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Navigation */
+    nav {
+      background: #fff;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links li a {
+      font-weight: 500;
+      color: #333;
+      padding: 0.5rem;
+    }
+    .nav-links li a.active,
+    .nav-links li a:hover {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin: 4rem 0;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .header p {
+      font-size: 1.125rem;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Card Sections */
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      overflow: hidden;
+      margin-bottom: 4rem;
+    }
+    .section img {
+      width: 100%;
+      max-width: 600px;
+      object-fit: cover;
+    }
+    .section-content {
+      padding: 2rem;
+      flex: 1;
+      min-width: 300px;
+    }
+    .section-content h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .section-content p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      padding: 0.75rem;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container">
+    <div class="logo">Astraphelos</div>
+    <ul class="nav-links">
+      <li><a href="#about" class="active">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="header">
+      <h1>Who We Are</h1>
+      <p>We are a proactive IT managed services provider specializing in Agile, DevOps, and Lean methodologies to automate and optimize your infrastructure. Our certified engineers deliver 24/7 monitoring, maintenance, and support.</p>
+    </section>
+
+    <section id="services" class="section">
+      <img src="https://via.placeholder.com/600x400?text=Network+Infrastructure" alt="Network Infrastructure">
+      <div class="section-content">
+        <h2>Our Services</h2>
+        <p><strong>Infrastructure Management:</strong> Configuration, patching, and performance tuning of servers and networks.</p>
+        <p><strong>Cloud & DevOps:</strong> Infrastructure as Code, CI/CD pipelines, and cloud migrations.</p>
+        <p><strong>Security & Compliance:</strong> Vulnerability scanning, firewall management, and regulatory compliance support.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-content">
+        <h2>Contact Us</h2>
+        <p>Reach out for a free consultation or support inquiries.</p>
+        <form class="contact-form" action="mailto:contact@astraphelos.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <img src="https://via.placeholder.com/600x400?text=Contact+Us" alt="Contact Us">
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Astraphelos. All rights reserved.
+  </footer>
+</body>
+</html>
